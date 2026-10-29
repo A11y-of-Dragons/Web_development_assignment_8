@@ -1,3 +1,9 @@
 console.log("script.js connected!");
-let buttons = document.querySelectorAll("#mood-buttons button");
-console.log(buttons);
+let button = document.querySelectorAll("button");
+
+button.forEach(function(button){
+    button.addEventListener("click", function() {
+        console.log("you clicked the button");
+    });
+
+});
