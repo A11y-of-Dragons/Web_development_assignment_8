@@ -9,8 +9,8 @@
     <link rel="stylesheet" href ="./css/style.css">
 </head>
 <body>
-    <h1 class="text-center mt-4">Country or City mouse: where do you belong?</h1>
-    
+    <h1 class="text-center mt-4" id ="page-title">page title</h1>
+    <h1 class="text-center mt-4" id ="instructions-for-quiz">instructions</h1>    
     <!-- Start quiz element -->
     <div class="container d-flex justify-content-center" id="question-1">
       <div class="card my-4 p-4 question-block" style="width: 75%;">
@@ -25,69 +25,54 @@
           <div class="col-6">
             <button class="btn btn-outline-primary w-100 answer-btn" data-buttonid="1" data-answer="C">Middle of middle of no where Indiana</button>
           </div>
-          <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-buttonid="1" data-answer="D"> Do I have to pick one? </button>
-          </div>
         </div>
       </div>
     </div>
-
     
-    
+ 
     <!-- End quiz element -->
 
-    <!-- Add more quiz elements here -->
 
     <!-- Start 2nd quiz question -->
-    <div class="container d-flex justify-content-center" id="question-1">
+    <div class="container d-flex justify-content-center" id="question-2">
       <div class="card my-4 p-4 question-block" style="width: 75%;">
         <h4 class="mb-3">What are your prefered weekend plans?</h4>
         <div class="row g-2">
           <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A">Nothing, I've been working all week</button>
+            <button class="btn btn-outline-primary w-100 answer-btn" data-buttonid="2" data-answer="A">Nothing, I've been working all week</button>
           </div>
           <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B">A quiet, peaceful morning with maybe a few errands</button>
+            <button class="btn btn-outline-primary w-100 answer-btn" data-buttonid="2" data-answer="B">A quiet, peaceful morning with maybe a few errands</button>
           </div>
           <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="C">I have a packed schedule: the work doesn't stop because its a different day</button>
-          </div>
-          <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="D">Chores I didn't have time to get to over the week</button>
+            <button class="btn btn-outline-primary w-100 answer-btn" data-buttonid="2" data-answer="C">I have a packed schedule: the work doesn't stop because its a different day</button>
           </div>
         </div>
       </div>
     </div>
-
-    
     
     <!-- End second quiz question-->
     <!-- Start 3nd quiz question -->
-    <div class="container d-flex justify-content-center" id="question-1">
+    <div class="container d-flex justify-content-center" id="question-3">
       <div class="card my-4 p-4 question-block" style="width: 75%;">
         <h4 class="mb-3">Pick a color</h4>
         <div class="row g-2">
           <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A">Red</button>
-          </div>
-          <div class="col-6">
             <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B">Blue</button>
           </div>
           <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="C">Green</button>
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A">Green</button>
           </div>
           <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="D">Yellow</button>
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="C">Yellow</button>
           </div>
         </div>
       </div>
     </div>
-
-    
     
     <!-- End third quiz question-->
          <!-- Start 4th quiz question -->
-    <div class="container d-flex justify-content-center" id="question-1">
+    <div class="container d-flex justify-content-center" id="question-4">
       <div class="card my-4 p-4 question-block" style="width: 75%;">
         <h4 class="mb-3">Are you someone who loves getting to know people?</h4>
         <div class="row g-2">
@@ -95,43 +80,36 @@
             <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A">Nah, I prefer my cat most days</button>
           </div>
           <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B">Yes! I am the social butterfly of my friend group</button>
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="C">Yes! I am the social butterfly of my friend group</button>
           </div>
           <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="C">Eh, why not? My neightbors are ok</button>
-          </div>
-          <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="D">It depends on the day</button>
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B">It depends on the day</button>
           </div>
         </div>
       </div>
     </div>
-
-    
     
     <!-- End fourth quiz question-->
 
              <!-- Start 5th quiz question -->
-    <div class="container d-flex justify-content-center" id="question-1">
+    <div class="container d-flex justify-content-center" id="question-5">
       <div class="card my-4 p-4 question-block" style="width: 75%;">
         <h4 class="mb-3">Ok, last question: Small apartment near everything or large house in the middle of nowhere</h4>
         <div class="row g-2">
           <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A">A large house. No questions asked</button>
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="C">Small apartment- I get to say hi to everyone!</button>
           </div>
           <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B">Small apartment- I get to say hi to everyone!</button>
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B">Do I have to pick one?</button>
           </div>
           <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="C">Small apartment for late night runs</button>
-          </div>
-          <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="D">Large house! I loke my privacy</button>
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A">Large house! I love my privacy</button>
           </div>
         </div>
       </div>
     </div>
     <!-- End fifth quiz question-->
+
     <div class="container d-flex justify-content-center">
       <button id="show-result" class="btn btn-success my-4">Show Results</button>
     </div>    
