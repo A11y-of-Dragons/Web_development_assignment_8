@@ -37,23 +37,27 @@ function displayResult(Answers){
         };
 
     if (score < 8 ){
-        console.log("you would like the country!")
+        output = "you would like the country!"
+
     }else if (score = 8, 9, 10 ,11){
-        console.log ("you'd like the small town life!")
+        output = "you'd like the small town life!"
     }else{
-        console.log("city life is the way to go!")
+        output = "city life is the way to go!"
     }
-    let totalScore =document.getElementById("result-containter");
-    totalScore.textContent = score;
+    let totalScore = document.getElementById("result-text");
+  
+    totalScore.textContent = output;
     };
 
-let Result = document.querySelectorAll("btn btn-success my-4");
-let showResult= document.getElementById("result-container");
-Result.forEach(function(button){
-  button.addEventListener("click", function() {
-    button.classList.add("selected");
+let Result = document.querySelectorAll("result-container");
+let showResult= document.getElementById("show-result");
+
+
+showResult.addEventListener("click", function() {
+    showResult.classList.add("selected");
     displayResult(userAnswers);
 
 });
-});
+    
+
 
